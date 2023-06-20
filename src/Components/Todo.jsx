@@ -48,13 +48,10 @@ const Todo = () => {
   return (
     <div style={{backgroundColor:'lavender'}} >
 
-            <Typography variant='h3' style={{fontFamily:'BlinkMacSystemFont', color:'#3f51b5'}}>ToDo Application</Typography>
-            <br /><br />
-            <TextField id="form1" variant='outlined' label='Item' onChange={itemInputHandler}/>
-            <br /><br />
-            <TextField id="form2" variant='outlined' label='Description' onChange={desInputHandler}/>
-            <br /><br />
-            <TextField id="form3" style={{fontFamily:'cursive'}}  variant='outlined' label='Quantity' onChange={qtyInputHandler}/>    
+            <Typography variant='h3' style={{fontFamily:'BlinkMacSystemFont', color:'#3f51b5'}}>ToDo Application</Typography>&nbsp;
+            <TextField required id="form1" variant='outlined' label='Item' onChange={itemInputHandler}/>&nbsp;
+            <TextField required id="form2" variant='outlined' label='Description' onChange={desInputHandler}/>&nbsp;
+            <TextField required id="form3" style={{fontFamily:'cursive'}}  variant='outlined' label='Quantity' onChange={qtyInputHandler}/> 
             <br /><br />
             <Button variant="contained" size="medium" color='success' onClick={changeItem}>ADD</Button>
             <br /><br />        
